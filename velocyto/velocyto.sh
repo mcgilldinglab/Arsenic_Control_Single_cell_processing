@@ -1,0 +1,1 @@
+velocyto run -b barcodes.tsv -o output -m mm10_rmsk.gtf gex_possorted_bam.bam mm10_annotation.gtf

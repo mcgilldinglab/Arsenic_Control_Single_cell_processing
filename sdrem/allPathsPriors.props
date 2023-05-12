@@ -1,0 +1,22 @@
+# Either store, filter, or store/filter
+mode = store/filter
+
+# Network data
+sources.file = receptor.txt
+targets.file = tf_2023.txt
+edges.file = ppi_ptm_pd.txt
+# Node priors for certain nodes.  May be left blank.
+#node.priors.file = nodePriors.txt
+# Maximum number of edges to allow in a path
+max.path.length = 4
+# Node prior for all nodes not appearing in the node.priors.file
+#default.node.prior = 0.5
+
+# The directory that stored all enumerated paths and from which
+# paths are read when filtering
+stored.paths.dir = storedPaths/allPathsPriors
+
+# The number of top-scoring paths to keep after filtering
+path.enum.bound = 100000
+# The directory where the filtered paths are stored
+filtered.paths.dir = storedPaths/allPathsPriors100k
